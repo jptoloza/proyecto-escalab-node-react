@@ -1,0 +1,1 @@
+{"version":3,"file":"896.bundle.js","mappings":"0HAUA,UARqB,WACnB,OACE","sources":["webpack://front/./src/pages/AsesoriaPage/AsesoriaPage.jsx"],"sourcesContent":["import React from 'react'\n\nconst AsesoriaPage = () => {\n  return (\n    <div>\n      Asesoria\n    </div>\n  )\n}\n\nexport default AsesoriaPage\n"],"names":[],"sourceRoot":""}

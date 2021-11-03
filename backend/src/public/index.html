@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Sign In</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="481725787664-rsr900716513atjekms000bvjk57edqj.apps.googleusercontent.com"/>
+  </head>
+  <body>
+    <h1>Proyecto Escalab Server Api</h1>
+    <h3>Servdiro de Prueba</h3>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <br /><br />
+    <a href="#" onclick="signOut();">Sign out</a>
+    <script>
+      function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        const token = googleUser.getAuthResponse().id_token;
+        const url = window.location.hostname == 'localhost' ? "http://localhost:4000/api/v1/auth" : "https://escalab-server-api.herokuapp.com/api/v1/auth";
+        console.log(token)
+        fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ token }),
+        })
+          .then((resp) => resp.json())
+          .then((resp) => console.log(resp.data))
+          .catch((err) => {
+                console.log('error');
+                console.log
+            });
+      }
+
+
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+          console.log("User signed out.");
+        });
+      }
+    </script>
+  </body>
+</html>

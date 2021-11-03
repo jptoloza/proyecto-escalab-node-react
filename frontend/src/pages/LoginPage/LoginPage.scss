@@ -1,0 +1,56 @@
+.login-container {
+  min-width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.login-logoGoole {
+  width: 20px;
+  padding: 5px;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.login-buttonLogin {
+  background: transparent;
+  width: 100%;
+  margin-top:40px;
+  border: 1px solid #233aaa;
+  background-color: #3f51b5;
+  cursor: pointer;
+  color: #fff;
+}
+
+.login-column-left {
+  margin-top: 100px !important;
+  text-align: right;
+  dispaly:blocK;
+}
+
+.login-column-right {
+  margin-top: 100px !important;
+  text-align: left;
+  padding:20px;
+}
+
+.login-title {
+  margin-bottom: 20px;
+}
+
+.login-body-color {
+  color: #363635;
+}
+
+.login-div-support {
+  margin-top: 10px;
+  
+}
+
+
+@media (max-width: 900px) {
+  .login-column-left {
+      display:none;
+  }
+}
+

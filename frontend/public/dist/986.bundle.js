@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfront=self.webpackChunkfront||[]).push([[986],{72986:function(e,n,t){t.r(n);var r=t(67294),u=t(2658);n.default=function(){return r.createElement("div",null,r.createElement(u.Z,{variant:"h3",color:"initial"},"Documentos"))}}}]);
+//# sourceMappingURL=986.bundle.js.map

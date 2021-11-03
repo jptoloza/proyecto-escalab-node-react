@@ -9,7 +9,7 @@ Existen al menos 3 perfiles o roles de usuarios: administrador, supervisor y cli
 ToDo:
 - Asesoria
 - Inasistencias
-- CDocumentos
+- Documentos
 - Encuestas
 - Ayuda
 

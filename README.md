@@ -30,7 +30,7 @@ https://escalab-server-api.herokuapp.com/
 
 
 
-Frondend ReactJS
+Frontend ReactJS
 ----------------
 
 https://escalab-react-jptoloza-gmailcom.vercel.app/login

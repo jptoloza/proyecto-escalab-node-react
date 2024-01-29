@@ -40,7 +40,7 @@ https://escalab-react-jptoloza-gmailcom.vercel.app/login
 - Implementación de página 404
 - Implemantación de useSocket para la recepción en tiempo real de notificaciones
 - PropType en DialogComponent, SearchToolBarComponent, TabPanelComponent
-- Empaquetado con Webpacl y Babel
+- Empaquetado con Webpack y Babel
 - Despliegue en vercel: https://escalab-react-jptoloza-gmailcom.vercel.app/login
 - Aplicación de ErrorBoundary
 
